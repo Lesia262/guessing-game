@@ -11,17 +11,17 @@ class GuessingGame {
     }
 
     guess() {
-    	var guessValue = (this.minValue + this.maxValue)/2 - ((this.minValue + this.maxValue)%2)/2;
+    	var guessValue = (this.minValue + this.maxValue)/2 + ((this.minValue + this.maxValue)%2)/2;
     	return guessValue;
     }
 
     lower() {
-		this.maxValue = (this.minValue + this.maxValue)/2 - ((this.minValue + this.maxValue)%2)/2;
+		this.maxValue = (this.minValue + this.maxValue)/2 + ((this.minValue + this.maxValue)%2)/2;
 
     }
 
     greater() {
-		this.minValue = (this.minValue + this.maxValue)/2 - ((this.minValue + this.maxValue)%2)/2;
+		this.minValue = (this.minValue + this.maxValue)/2 + ((this.minValue + this.maxValue)%2)/2;
 
     }
 }
